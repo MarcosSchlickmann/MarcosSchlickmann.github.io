@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - new-template-sunainapai-makesite
+      - master
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -16,6 +16,7 @@ jobs:
         run: |
           python3 makesite.py
           mv _site docs/
+          mv CNAME docs/
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.1

@@ -1,4 +1,4 @@
-My personal website and bog. Built using https://github.com/sunainapai/makesite
+My personal website and blog. Built using https://github.com/sunainapai/makesite
 
 
 License
